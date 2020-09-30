@@ -1,0 +1,36 @@
+<div class="as-search-wrapper" role="main">
+    <div class="as-navtuck-wrapper">
+        <div class="as-l-fullwidth  as-navtuck" data-events="event52">
+            <div>
+                <div class="pd-billboard pd-category-header">
+                    <div class="pd-l-plate-scale">
+                        <div class="pd-billboard-background">
+                            <img src="./assets/music-audio-alp-201709" alt="" width="1440" height="320"
+                                data-scale-params-2="wid=2880&amp;hei=640&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1503948581306"
+                                class="pd-billboard-hero ir">
+                        </div>
+                        <div class="pd-billboard-info">
+                            <h1 class="pd-billboard-header pd-util-compact-small-18">Tienda e-commerce</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="as-search-results as-filter-open as-category-landing as-desktop" id="as-search-results">
+        <h1>{{ title }}</h1>
+        <h3>{{ subtitle }}</h3>
+        {{#if params }}
+            <ul>
+                <li>preference_id: {{ params.preference_id }}</li>
+                <li>external_reference: {{ params.external_reference }}</li>
+                <li>collection_status: {{ params.collection_status }}</li>
+                <li>payment_type: {{ params.payment_type }}</li>
+                <li>merchant_account_id: {{ params.merchant_account_id }}</li>
+                <li>processing_mode: {{ params.processing_mode }}</li>
+                <li>site_id: {{ params.site_id }}</li>
+                <li>collection_id: {{ params.collection_id }}</li>
+            </ul>
+        {{/if}}
+    </div>
+</div>
