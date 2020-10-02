@@ -10,13 +10,11 @@ mercadopago.configure({
 const buildPreference = (product) => {
     const { title, price, unit, img } = product;
 
-    const [, ...safeImg] = img;
-
     const preference = {
         items: [
             {
                 title,
-                picture_url: `${process.env.BASE_URL}${safeImg.join("")}`,
+                picture_url: `${safeImg}`,
                 unit_price: parseFloat(price),
                 quantity: parseInt(unit, 10),
                 description: "Dispositivo móvil de Tienda e-commerce",
