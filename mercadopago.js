@@ -14,7 +14,7 @@ const buildPreference = (product) => {
         items: [
             {
                 title,
-                picture_url: `${safeImg}`,
+                picture_url: `${img}`,
                 unit_price: parseFloat(price),
                 quantity: parseInt(unit, 10),
                 description: "Dispositivo móvil de Tienda e-commerce",
