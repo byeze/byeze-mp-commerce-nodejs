@@ -42,7 +42,6 @@ const failure = (_req, res) => {
 const ipn = (req, res) => {
     console.log(JSON.stringify(req.query));
     console.log(JSON.stringify(req.body));
-    console.log("COMPLETE", req);
     res.send("ok");
 };
 
